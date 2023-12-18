@@ -7,7 +7,6 @@ def initialize():
             break
         else:
             print('your chances must be between the range of 3 to 50, try again')
-    print("your requested range gap must not be less than 50")
     while True:
         start_number = int(input('what is the start number?: '))
         end_number = int(input('what is the end number?: '))
