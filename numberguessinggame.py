@@ -24,10 +24,15 @@ def initialize():
         if guess1 == the_number:
             print("Bravo! That's right!")
             break
-        else:
+        elif guess1 > the_number:
             user_chances -= 1
             print('Nope! Try again. You have', user_chances, 'chance(s) left')
-            if user_chances == 0:
+            print('the number is less than ', guess1)
+        elif guess1 < the_number:
+            user_chances -= 1
+            print('Nope! Try again. You have', user_chances, 'chance(s) left')
+            print('the number is greater than', guess1)
+        if user_chances == 0:
                 print('Sorry, your chances reached the limit!')
                 break
 
